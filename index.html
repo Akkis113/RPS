@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>RPS Game</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <button id="playComputer">Play with computer</button>
-    <button id="playOnline">Play online</button>
+    <!-- options -->
+    <div class="playOptions">
+        <button id="playComputer">Play with computer</button>
+        <button id="playOnline">Play online</button>
+    </div>
+    <!-- boxes (initially invisible) -->
+    <div class="playGround" style="display:none">
+        <div class="box" id="playerBox">Make your move...</div>
+        <div class="box" id="opponentBox">Waiting...</div>
+    </div>
+    <div class="scorePanel">
+        <div class="scoreBox" id="playerScore"></div>
+        <div class="scoreBox" id="opponentScore"></div>
+    </div>
+    <div class="info"></div>
+    <script src="./script.js"></script>
 </body>
 </html>

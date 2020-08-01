@@ -27,9 +27,9 @@ button {
 }
 
 .playGround,
-.scorePanel,
 .scoreBox,
 .info,
+.game-code,
 .box {
     display: flex;
     align-items: center;
@@ -50,8 +50,13 @@ button {
 }
 
 .scoreBox {
-    width: 36vw;
-    height: auto
+    width: 120px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 20px auto;
+    font-size: 20px;
+    background-color: #ffffff;
 }
 
 .box img {
@@ -59,8 +64,33 @@ button {
     height: 70%;
 }
 
+.game-code {
+	display: flex;
+    height: 40px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    border-radius: 4px;
+    width: auto;
+    width: 300px;
+    font-size: 24px;
+	font-family: monospace;
+	margin-bottom: 20px;
+}
+
+.game-code input {
+	border: none;
+    width: 80%;
+	height: 80%;
+	outline: none;
+	font-size: 24px;
+	font-family: monospace;
+	text-align: center;
+}
+
 .info p {
-    margin: 120px auto 0 auto;
+    margin: 40px auto 0 auto;
     font-family: monospace;
     font-size: 24px;
 }

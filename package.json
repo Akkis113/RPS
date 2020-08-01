@@ -1,0 +1,21 @@
+{
+	"name": "rps113",
+	"version": "1.0.0",
+	"description": "Rock Paper Scissor Game made",
+	"main": "server.js",
+	"dependencies": {
+	  "webpack": "^4.44.1",
+	  "websocket": "^1.0.31"
+	},
+	"devDependencies": {},
+	"scripts": {
+	  "test": "echo \"Error: no test specified\" && exit 1",
+	  "start": "node server.js"
+	},
+	"author": "Akshay Singh",
+	"license": "ISC",
+	"engines": {
+		"node": "12.x"
+	}
+  }
+  

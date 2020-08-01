@@ -16,13 +16,28 @@
     </div>
     <!-- boxes (initially invisible) -->
     <div class="playGround" style="display:none">
-        <div class="box" id="playerBox">Make your move...</div>
-        <div class="box" id="opponentBox">Waiting...</div>
-    </div>
-    <div class="scorePanel">
-        <div class="scoreBox" id="playerScore"></div>
-        <div class="scoreBox" id="opponentScore"></div>
-    </div>
+		<div>
+			<div class="box" id="playerBox">Make your move...</div>
+			<div class="scoreBox" id="playerScore"></div>
+		</div>
+        <div>
+			<div class="box" id="opponentBox">Waiting...</div>
+			<div class="scoreBox" id="opponentScore"></div>
+		</div>
+	</div>
+	<!-- Create or Join game buttons -->
+	<div class="create-join-btns" style="display: none;">
+		<button type="button" id="create_game">Create Game</button>
+		<button type="button" id="join_game">Join Game</button>
+	</div>
+	<label for="create-code" style="display: none;"></label>
+	<div id="create-code" class="game-code" style="display:none"></div>
+	<label for="join-code" style="display: none;">Share this code to join</label>
+	<div id="join-code" class="game-code" style="display:none">
+		<input type="text" name="game-code" id="game-code" placeholder="enter game code">
+	</div>
+    <!-- score panel (initially invisible) -->
+    <div class="scorePanel" style="display:none"></div>
     <div class="info"></div>
     <script src="./script.js"></script>
 </body>
